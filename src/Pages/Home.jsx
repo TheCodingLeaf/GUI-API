@@ -2,7 +2,7 @@ import { Header } from "../Components/Header/Header"
 
 export const Home = () => {
   return (
-    <div>
+    <div className="home-page">
         <Header title="Start Page" />
     </div>
   )

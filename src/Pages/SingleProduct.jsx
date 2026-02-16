@@ -10,9 +10,9 @@ export const SingleProduct = () => {
   if (!product) return <p>Product not found</p>;
 
   return (
-    <div>
+    <div className="product-detail">
       <h1>{product.title}</h1>
-      <img src={product.thumbnail} alt={product.title} style={{ width: '400px' }} />
+      <img src={product.thumbnail} alt={product.title} />
       <p><strong>Price:</strong> ${product.price}</p>
       <p><strong>Description:</strong> {product.description}</p>
       <p><strong>Rating:</strong> {product.rating}</p>

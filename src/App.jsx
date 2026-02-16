@@ -6,6 +6,7 @@ import { Contact } from './Pages/Contact'
 import { Products } from './Pages/Products'
 import { SingleProduct } from './Pages/SingleProduct'
 import './App.css'
+import './Pages/Pages.css'
 
 function App() {
 

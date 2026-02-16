@@ -9,7 +9,7 @@ export const Products = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div>
+    <div className="products-container">
         <h1>Products</h1>
         {data?.products?.map((product) => (
           <Link key={product.id} to={`/products/${product.id}`}>
