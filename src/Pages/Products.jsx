@@ -1,5 +1,6 @@
 import { ProductCard } from "../Components/ProductCard/ProductCard"
 import { useProductsDATA } from "../Components/Data/ProductDATA"
+import { Link } from "react-router-dom";
 
 export const Products = () => {
   const { data, error, isLoading } = useProductsDATA();
@@ -11,7 +12,9 @@ export const Products = () => {
     <div>
         <h1>Products</h1>
         {data?.products?.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <Link key={product.id} to={`/products/${product.id}`}>
+            <ProductCard product={product} />
+          </Link>
         ))}
     </div>
   )
