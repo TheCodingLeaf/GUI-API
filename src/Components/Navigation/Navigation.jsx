@@ -17,6 +17,9 @@ export const Navigation = () => {
           <li className="nav-item">
             <NavLink to="/contact" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Contact</NavLink>
           </li>
+           <li className="nav-item">
+            <NavLink to="/products" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Products</NavLink>
+          </li>
         </ul>
       </div>
     </nav>
